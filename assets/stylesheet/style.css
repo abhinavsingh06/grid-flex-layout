@@ -134,7 +134,7 @@ table {
 html {
   font-size: 16px;
   font-family: "IBM Plex Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 2.5;
 }
 /*hr {
   display: block;
@@ -161,6 +161,10 @@ html {
   border-radius: 2.8rem;
   border-style: none;
 }
+i {
+  font-size: 3rem;
+  color: aliceblue;
+}
 /*--------header--------*/
 .header {
   grid-template-columns: repeat(2, 1fr);
@@ -184,14 +188,14 @@ html {
       rgba(58, 58, 58, 0.6)
     ),
     url(../media/hero.jpg);
-  background-position: center, center;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
-  min-height: calc(75vh + 7rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 85vh;
   position: relative;
   text-align: center;
   justify-content: center;
-  background-attachment: fixed, fixed;
+  background-attachment: fixed;
   background-color: #3a3a3a;
   color: #ffffff;
   padding: 10rem 0 10rem 0;
@@ -232,4 +236,133 @@ html {
 /*-------section2--------*/
 .section2 {
   grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+}
+.section2 img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.733);
+  margin: 1rem 1rem 1rem 15rem;
+}
+.sec2-content {
+  padding: 10rem 3rem 0 3rem;
+}
+.sec2-content h2 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.sec2-content p {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.sech,
+.secp {
+  text-align: right;
+  padding-left: 2rem;
+}
+/*-------section4------*/
+.section4 {
+  background-color: #4797ec;
+  background-image: linear-gradient(45deg, rgba(71, 151, 236, 0), #884beb 80%);
+  margin-top: 5rem;
+}
+.sec4 {
+  grid-template-columns: 1fr;
+}
+.sec4 h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.sec4 hr {
+  width: 6rem;
+}
+.sec4 p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+/*---------section5------*/
+.section5 {
+  background-color: #4797ec;
+  background-image: linear-gradient(45deg, rgba(71, 151, 236, 0), #884beb 80%);
+}
+.sec5 {
+  grid-template-columns: repeat(3, 1fr);
+  color: aliceblue;
+}
+.sec5i {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.733);
+  margin: 4rem 0 4rem 4rem;
+}
+.secsec h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: right;
+  margin-top: 3rem;
+}
+
+.secsec p {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+  text-align: right;
+}
+.secsec2 h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: left;
+  margin-top: 3rem;
+}
+.secsec2 p {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+.list {
+  text-align: right;
+  padding-top: 3rem;
+}
+.list2 {
+  text-align: left;
+  padding-top: 3rem;
+}
+
+/*-----------section6------*/
+.btn-secondary {
+  width: 15rem;
+  background-image: linear-gradient(90deg, rgba(71, 151, 236, 0), #884beb 90%);
+  background-color: #4797ec;
+  color: antiquewhite;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+/*-----------footer--------*/
+.footer {
+  grid-template-columns: 1fr;
+  background-image: linear-gradient(
+      90deg,
+      rgba(58, 58, 58, 0.6),
+      rgba(58, 58, 58, 0.6)
+    ),
+    url(../media/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 40vh;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  padding: 10rem 0 10rem 0;
 }
