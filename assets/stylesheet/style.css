@@ -161,9 +161,33 @@ html {
   border-radius: 2.8rem;
   border-style: none;
 }
-i {
-  font-size: 3rem;
+.icon {
+  font-size: 1.9rem;
   color: aliceblue;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  margin-left: 1.7rem;
+  margin-right: 1.7rem;
+}
+
+.icon::before {
+  font-size: 1.15rem;
+  position: relative;
+  top: 0.05rem;
+}
+
+.icon::after {
+  transform: rotate(0deg);
+  border-radius: 50%;
+  border: 3px solid aliceblue;
+  content: "";
+  display: block;
+  height: 4.75rem;
+  left: 50%;
+  margin: -2.5rem 0 0 -2.5rem;
+  position: absolute;
+  top: 50%;
+  width: 4.75rem;
 }
 /*--------header--------*/
 .header {
@@ -179,6 +203,16 @@ i {
   text-align: center;
   font-size: 2rem;
   padding: 0.3rem;
+}
+.topnav a {
+  text-decoration: none;
+  color: azure;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.topnav {
+  padding-top: 0.8rem;
+  padding-left: 1rem;
 }
 /*---------hero----------*/
 .hero {
@@ -243,10 +277,10 @@ i {
   height: 30rem;
   border-radius: 50%;
   box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.733);
-  margin: 1rem 1rem 1rem 15rem;
 }
 .sec2-content {
-  padding: 10rem 3rem 0 3rem;
+  padding: 10rem 15rem 0 3rem;
+  margin-left: 5rem;
 }
 .sec2-content h2 {
   font-size: 2.5rem;
@@ -256,15 +290,32 @@ i {
   padding-top: 0.5rem;
   font-size: 1.5rem;
 }
-.sech,
-.secp {
+.sec2-content2 {
+  padding: 10rem 5rem 0 15rem;
+  margin-right: -3rem;
   text-align: right;
-  padding-left: 2rem;
 }
+.sec2-content2 h2 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.sec2-content2 p {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.secr {
+  margin-left: 20rem;
+}
+.secl {
+  margin-left: 6rem;
+}
+
 /*-------section4------*/
-.section4 {
+.back {
   background-color: #4797ec;
   background-image: linear-gradient(45deg, rgba(71, 151, 236, 0), #884beb 80%);
+}
+.section4 {
   margin-top: 5rem;
 }
 .sec4 {
@@ -288,10 +339,6 @@ i {
   padding-top: 2rem;
 }
 /*---------section5------*/
-.section5 {
-  background-color: #4797ec;
-  background-image: linear-gradient(45deg, rgba(71, 151, 236, 0), #884beb 80%);
-}
 .sec5 {
   grid-template-columns: repeat(3, 1fr);
   color: aliceblue;
@@ -301,7 +348,7 @@ i {
   height: 30rem;
   border-radius: 50%;
   box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.733);
-  margin: 4rem 0 4rem 4rem;
+  margin: 4rem 0 4rem 3.1rem;
 }
 .secsec h2 {
   font-size: 1.5rem;
@@ -366,3 +413,20 @@ i {
   color: #ffffff;
   padding: 10rem 0 10rem 0;
 }
+.footer a {
+  margin-left: 2rem;
+}
+/*-------responsive-----
+@media all and (max-width: 768px) {
+  .section2 {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+  .section2 img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.733);
+    margin: -0 10rem 0 -20rem;
+  }
+}*/
